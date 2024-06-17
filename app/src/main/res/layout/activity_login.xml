@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAD3BE"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/LogoPrincipal"
+        android:layout_width="187dp"
+        android:layout_height="189dp"
+        android:src="@drawable/iniciologo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/TxtInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Inicie sesión o crea una nueva cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoPrincipal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/CuadroDeCorreo"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:textSize="14dp"
+        android:background="#ffff"
+        android:hint="Ingrese su correo electronico"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtInicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+
+        />
+
+    <EditText
+        android:id="@+id/CuadroDeContrasena"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:textSize="14dp"
+        android:background="#ffff"
+        android:hint="Ingrese su contraseña"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CuadroDeCorreo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+
+
+        />
+
+    <Button
+        android:id="@+id/BotonDeInicio"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:textSize="15dp"
+        android:text="Iniciar sesión"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CuadroDeContrasena"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+
+
+        >
+
+    </Button>
+
+    <Button
+
+        android:id="@+id/CuentaNueva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FF0000"
+        android:textSize="15dp"
+        android:text="Cree una cuenta nueva"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BotonDeInicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.00"
+
+        >
+
+
+    </Button>
+
+    <Button
+        android:id="@+id/ContinueSinCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FF0000"
+        android:textSize="15sp"
+        android:text="Continuar sin una cuenta"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="HardcodedText">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
